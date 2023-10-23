@@ -1,0 +1,304 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+            box-sizing:border-box;
+        }
+        ul{
+            display:flex;
+            min-height:10vh;
+            justify-content:space-around;
+            /*background-color:pink;*/
+            align-items:center;
+        }
+        li{
+            list-style:none;
+            
+        }
+       .intro>.intro-text>p>a, li>a,.location>h2{
+            text-decoration:none;
+            font:bold 15px verdana;
+            color:rgb(148, 4, 4)
+        }
+        li>a:hover{
+            color:rgb(128, 120, 120)
+        }
+        .intro>.intro-text>p>a:hover{
+            color:rgb(87, 84, 84)
+        }
+        .cover {
+            background-image: url(https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1052&q=80); background-size:cover;
+            background-position: center;
+            height: 90vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+        .cover>h2{
+            text-align:center;
+            font:bold 2rem verdana;
+            margin-bottom:1.5rem;
+        }
+        .cover>input[type="button"]{
+            width:10rem;
+            padding:10px;
+            border-radius:10px;
+            height:3rem;
+            font:bold 1.2rem verdana;
+            color:white;
+            background-color:rgb(12, 98, 193)
+        }
+        .cover>input[type="button"]:focus{
+            outline:none;
+        }
+        /* Introduction Style*/
+        .intro>.intro-img>img{
+            width:100%;
+            height:100%;
+        }
+        .intro{
+            display:flex;
+            margin-top:1rem;
+            flex-wrap:wrap;
+        }
+        .intro>.intro-text{
+            background-color:rgb(200, 196, 196);
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            justify-content:space-evenly;
+        }
+        .intro>.intro-text>p{
+            width:80%;
+            text-align:left;
+        }
+        .intro>.intro-img,.intro>.intro-text{
+            flex:1 1 23rem;
+        }
+
+        /*8 Trcaks*/
+        .tracks{
+            display:flex;
+            margin-top:1.5rem;
+            justify-content:space-around;
+            flex-wrap:wrap;
+        }
+        .track{
+            display:flex;
+            flex-direction:column;
+            flex-basis:23rem;
+            align-items:center;
+
+        }
+        .tracks>.track>p{
+            text-align:center;
+        }
+        .location {
+            background-color: rgb(215 215 215);
+            min-height: 10vh;
+            text-align: center;
+            margin-top: 1rem;
+            
+            flex-wrap:wrap;
+        }
+        .location>h2{
+           font-size:30px;
+        }
+            .location > h3 {
+                color:white;
+            }
+        .locationtwo {
+            width:
+                height:;
+            display: flex;
+            background-color: rgb(215 215 215);
+            flex-wrap:wrap;
+        }
+        .locationtwo>.left>img{
+          
+            width:100%;
+            height:100%;
+        }
+            .locationtwo > .right {
+                display: flex;
+                justify-content: space-around;
+            }
+            .locationtwo > .left, .locationtwo > .right {
+                display:flex;
+                flex: 1 1 23rem;
+            }
+                .locationtwo > .right > .rightleft > p > a, .locationtwo > .right > .rightright > p > a {
+                    color: black;
+                    text-decoration: none;
+                }
+
+                .locationtwo > .right > .rightleft > p, .locationtwo > .right > .rightright > p {
+                    display: flex;
+                    background-color: rgb(233 226 226);
+                    padding-top: 0;
+                    padding-bottom: 40px;
+                    padding-left: 0;
+                    padding-right: 200px;
+                }
+
+                .locationtwo > .right > .rightleft, .locationtwo > .right > .rightright {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                }
+
+        .contactus {
+            background-color: rgb(53 52 52);
+            min-height: 10vh;
+            text-align: left;
+            margin-top: 1rem;
+            display:flex;
+            flex-wrap:wrap;
+
+           
+        }
+            .contactus > .first >.big> p {
+                color: white;
+                font-size: 25px;
+                font-family:Arial;
+            }
+            .contactus > .first > p {
+                color: rgb(192 192 192);
+      
+            }
+            .contactus > .first >.pp> p {
+                color: rgb(87, 84, 84);
+            }
+            .contactus > .second > p {
+                color:white;
+                font-size: 25px;
+                font-family: Arial;
+            
+                
+            }
+            .contactus >.second>.third> p >img {
+               width:30px;
+               height:30px;
+               border-radius:50%;
+               
+               margin-left:20px;
+          
+            }
+                .contactus > .second>.third {
+                  display:flex;
+                  
+             
+                }
+            .contactus > .first, .contactus > .second {
+                flex: 1 1 23rem;
+            }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Contact</a></li>
+        <h2>ITI System</h2>
+        <li><a href="#">Register</a></li>
+        <li><a href="#">Management</a></li>
+    </ul>
+    <div class="cover">
+        <h2>Limited Opportunities <br /> To Be One Of Our Team </h2>
+        <input type="button" value="Register" />
+    </div>
+    <div class="intro">
+        <div class="intro-img">
+            <img src="https://bookboon.com/blog/wp-content/uploads/sites/5/2019/03/teamwork-skills-768x502.jpeg.webp" title="life in ITI" />
+        </div>
+        <div class="intro-text">
+            <h2>Life In ITI</h2>
+            <p><a href="#">Events</a></p>
+            <p><a href="#">Hakthons</a></p>
+            <p><a href="#">Social Events</a></p>
+            <p><a href="#">Outings</a></p>
+        </div>
+    </div>
+    <div class="tracks">
+        <div class="track">
+            <img src="https://via.placeholder.com/150
+
+C/O https://placeholder.com/"
+                 title="Front End Track" />
+            <h3>For More Details Click <a href="#">More</a></h3>
+        </div>
+        <div class="track">
+            <img src="https://via.placeholder.com/150
+
+C/O https://placeholder.com/"
+                 title="Python Track" />
+            <h3>For More Details Click <a href="#">More</a></h3>
+        </div>
+        <div class="track">
+            <img src="https://via.placeholder.com/150
+
+C/O https://placeholder.com/"
+                 title="FullStack Track" />
+            <h3>For More Details Click <a href="#">More</a></h3>
+        </div>
+    </div>
+    <div class="location">
+        <h2>ITI Locations </h2> <br />
+        <h3>ITI Main Locations all over the country</h3>
+        <br />
+    </div>
+    <div class="locationtwo">
+        <div class="left">
+            <img src="https://previews.123rf.com/images/cristinabagiuiani/cristinabagiuiani1504/cristinabagiuiani150400017/39349451-map-location-app-design-illustration-.jpg">
+        </div>
+        <div class="right">
+            <div class="rightleft">
+                <p><a href="#">📍ITI - Smart Village </a></p>
+                <p><a href="#">📍ITI - Assuit</a></p>
+                <p><a href="#">📍ITI - Ismaillia</a></p>
+                <p><a href="#">📍ITI - Menofia</a></p>
+            </div>
+            <div class="rightright">
+                <p><a href="#">📍ITI - Alexandria</a></p>
+                <p><a href="#">📍ITI - Aswan</a></p>
+                <p><a href="#">📍ITI - Mansoura</a></p>
+                <p><a href="#">📍ITI - Minya</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="contactus">
+        <div class="first">
+           <span class="big"><p>contact us</p></span> 
+            <p>📍 28 km by cairo/Alexandria Desert Road, 6 october,B148,Egypt</p>
+            <span class="pp">
+                <p>📞 (+202) 353-65856</p>
+                <p>📧 ITIinfo@iti.gov.eg</p>
+                <br />
+                <br />
+            </span>
+        </div>
+        <div class="second">
+            <p>follow us</p>
+            <br />
+            <div class="third">
+                <p><img src="https://play-lh.googleusercontent.com/J--_O-bAdNwLKs8XXsm9dTbt4B19wHXq6qGr5eCAJEagPrdC86aB8RieIkRdqKtSbNM"</p>
+                <p><img src="https://static01.nyt.com/images/2014/08/10/magazine/10wmt/10wmt-superJumbo-v4.jpg"</p>
+                <p><img src="https://yt3.ggpht.com/ytc/AKedOLTs5xPwjVzxhss34sTUBnFyrJApSllD0pa3oQaOhw=s900-c-k-c0x00ffffff-no-rj"</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+</body>
+</html>
